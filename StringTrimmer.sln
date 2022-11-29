@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringTrimmer", "StringTrimmer\StringTrimmer.csproj", "{8D59B08E-B2BC-4690-8D5D-D6A4233393B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringTrimmerTests", "StringTrimmerTests\StringTrimmerTests.csproj", "{D8AFAED5-88AD-46DB-B52A-ACB3E7FC0811}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D59B08E-B2BC-4690-8D5D-D6A4233393B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D59B08E-B2BC-4690-8D5D-D6A4233393B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D59B08E-B2BC-4690-8D5D-D6A4233393B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D59B08E-B2BC-4690-8D5D-D6A4233393B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8AFAED5-88AD-46DB-B52A-ACB3E7FC0811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8AFAED5-88AD-46DB-B52A-ACB3E7FC0811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8AFAED5-88AD-46DB-B52A-ACB3E7FC0811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8AFAED5-88AD-46DB-B52A-ACB3E7FC0811}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

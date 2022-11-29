@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PackageId>DimonSmart.StringTrimmer</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Dmitry Dorogoy</Authors>
+    <Company>DimonSmart</Company>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RootNamespace>DimonSmart.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <PackageTags>String;Trim;ExtraSpaces</PackageTags>
+
+    <Description>Trim all string properties (and remove extra spaces) with one simple call. _A__B_ => A_B</Description>
+
+    <RepositoryUrl>https://github.com/DimonSmart/StringTrimmer</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>0BSD</PackageLicenseExpression>
+  
+  </PropertyGroup>
+
+  <ItemGroup>
+     <None Include="docs\readme.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+
+</Project>
