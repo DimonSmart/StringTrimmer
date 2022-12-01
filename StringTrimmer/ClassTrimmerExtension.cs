@@ -1,4 +1,5 @@
 ﻿namespace StringTrimmer;
+
 using System.Linq;
 using System.Reflection;
 
@@ -69,14 +70,17 @@ public static class ClassTrimmerExtension
             return null;
         }
 
+        var objType = obj.GetType();
+        var key = options + objType.FullName;
+
         var stringProperties = obj.GetType()
-            .GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty | BindingFlags.SetProperty)
-            .Where(pi => pi.PropertyType == typeof(string));
+              .GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty | BindingFlags.SetProperty)
+              .Where(pi => pi.PropertyType == typeof(string));
 
         if (!options.HasFlag(ClassTrimmerOptions.TrimPrivateProperties))
         {
             stringProperties = stringProperties.Where(pi => pi.GetSetMethod(false) != null);
-        }
+        };
 
         foreach (var stringProperty in stringProperties)
         {

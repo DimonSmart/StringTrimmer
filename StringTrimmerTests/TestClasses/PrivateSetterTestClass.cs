@@ -1,4 +1,4 @@
-﻿namespace StringTrimmerTests;
+﻿namespace StringTrimmerTests.TestClasses;
 
 public class PrivateSetterTestClass
 {

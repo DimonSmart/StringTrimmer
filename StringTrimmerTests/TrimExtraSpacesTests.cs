@@ -21,7 +21,7 @@ public class TrimExtraSpacesTests
     [InlineData("A  B ", "A B")]
     public void TrimExtraSpacesTest(string source, string expected)
     {
-        var test = new SimpleTestClass { StringProperty = source };
+        var test = new SimpleTestClass(source);
         test.TrimExtraSpaces();
         test.StringProperty.Should().Be(expected);
     }
@@ -42,6 +42,7 @@ public class TrimExtraSpacesTests
     public void TrimExtraSpaces_ShouldSkipFieldsWithoutPublicSetter(string source)
     {
         var test = new PrivateSetterTestClass(source);
+        test.TrimExtraSpaces();
         test.TrimExtraSpaces();
         test.StringProperty.Should().Be(source);
     }
