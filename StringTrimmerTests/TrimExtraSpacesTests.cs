@@ -1,5 +1,6 @@
 ﻿using FluentAssertions;
 using StringTrimmer;
+using StringTrimmerTests.TestClasses;
 using Xunit;
 
 namespace StringTrimmerTests;

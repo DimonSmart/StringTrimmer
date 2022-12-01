@@ -1,5 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 using StringTrimmer;
+using StringTrimmerTests.TestClasses;
 
 namespace StringTrimmerTests.Benchmark
 {
