@@ -50,7 +50,7 @@ Note: It is usual for users to not merely input a UserName during registration, 
 Try 
 public void CreateUser (User user)
 {
-   user.Trim(); // Just one line
+   user.TrimExtraSpaces(); // Just one line
 }
 ```
 
