@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -16,20 +16,22 @@
     <RootNamespace>DimonSmart.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
     <PackageTags>String;Trim;ExtraSpaces</PackageTags>
 
-    <Description>Trim all string properties (and remove extra spaces) with one simple call. _A__B_ =&gt; A_B</Description>
+    <Description>Trim all string properties (and remove extra spaces) with one simple call. " A  B " =&gt; "A B"</Description>
 
     <RepositoryUrl>https://github.com/DimonSmart/StringTrimmer</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>0BSD</PackageLicenseExpression>
+    <Title>String Trimmer</Title>
+    <Copyright>FREE</Copyright>
+    <PackageProjectUrl>https://github.com/DimonSmart/StringTrimmer</PackageProjectUrl>
+    <PackageIcon>StringTrimmer.png</PackageIcon>
+	<PackageIconUrl>https://i.imgur.com/QtDcm3d.png</PackageIconUrl>
   
   </PropertyGroup>
 
   <ItemGroup>
      <None Include="docs\readme.md" Pack="true" PackagePath="\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Runtime.Caching" Version="7.0.0" />
+	 <None Include="..\StringTrimmer\StringTrimmer.png" Pack="True" Visible="false" PackagePath="\" />
   </ItemGroup>
 
 
