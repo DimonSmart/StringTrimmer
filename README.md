@@ -3,6 +3,9 @@ Don't ever rely on user input!
 This package offers the ability to trim every string in a class.
 Sanitizing input data before processing is beneficial.
 
+# Note
+Please take a look at the Source Genarator based string trimmer. It's faster!
+https://github.com/DimonSmart/StringTrimmerGenerator
 
 # Problem statement
 Standard class for describing a user.
